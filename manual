@@ -1,0 +1,8 @@
+
+  usage: memeap <options> <interface>
+
+  Options:
+      -i                    : Interface to host network on
+      -o                    : Interface to host apache2 server on
+      -h                    : Displays this usage screen
+
