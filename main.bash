@@ -28,11 +28,11 @@ sleep 5
 gnome-terminal -e "bash -c \"dnsmasq -C ./dnsmasq.conf -d; exec bash\"" &> /dev/null
 
 # set up ip forwarding
-ifconfig $WEB 10.0.0.2/24 up
-iptables --flush
+# ifconfig $WEB 10.0.0.2/24 up
+# iptables --flush
 # iptables --table nat --append POSTROUTING --out-interface $WEB -j MASQUERADE
 # iptables --append FORWARD --in-interface at0 -j ACCEPT
 
 # start up apache
-sleep 5
-/etc/init.d/apache2 start
+# sleep 5
+# /etc/init.d/apache2 start
